@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+    <Button fx:id="clickSendGen" onAction="#clickSendGen" text="Сгенерировать" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Button onAction="#clickCopy" text="Скопировать" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <!--    <Button onAction="#clickClear" text="Очистить" GridPane.columnIndex="2" GridPane.rowIndex="4" />-->
+
+    <CheckBox fx:id="clickWordBig" 	selected="true" text="Буквы большие" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <CheckBox fx:id="clickWordSmale" 	selected="true" text="Буквы маленькие" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <CheckBox fx:id="clickWordNumbers" 	selected="true" text="Цифры" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <CheckBox fx:id="clickWordCharacters" 	selected="true" text="Знаки" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <!--    <Text text="Сайт" GridPane.columnIndex="0" GridPane.rowIndex="0"/>-->
+    <!--    <Text text="Логин" GridPane.columnIndex="0" GridPane.rowIndex="1"/>-->
+    <!--    <Text text="Длина пароля" GridPane.columnIndex="0" GridPane.rowIndex="2"/>-->
+    <!--    <Text text="Пароль" GridPane.columnIndex="0" GridPane.rowIndex="3"/>-->
+
+    <TextField fx:id="textWebsite"  promptText="Сайт (не обязательно)"  prefWidth="250" GridPane.columnSpan="10" GridPane.rowIndex="0" />
+    <TextField fx:id="textLogin" promptText="Логин (не обязательно)" prefWidth="250" GridPane.columnSpan="10" GridPane.rowIndex="1" />
+    <TextField fx:id="textLength" promptText="Длина пароля Обязательно!!"  prefWidth="250" GridPane.columnSpan="10" GridPane.rowIndex="2" />
+    <TextArea fx:id="textArea"  promptText="Тут будет выведет пароль после генерации" prefWidth="250" GridPane.columnSpan="10" GridPane.rowIndex="3" />
+
+
+</GridPane>
